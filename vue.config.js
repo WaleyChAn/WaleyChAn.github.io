@@ -8,5 +8,5 @@ module.exports = {
       }
     }
   },
-  outputDir: path.resolve('./doc')
+  outputDir: path.resolve('./docs')
 }
