@@ -1,0 +1,119 @@
+/* Transition
+-------------------------- */
+$--oc-all-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
+$--oc-fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--oc-fade-linear-transition: opacity 200ms linear !default;
+$--oc-md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1),
+opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--oc-border-transition-base: border-color .2s cubic-bezier(.645, .045, .355, 1) !default;
+$--oc-color-transition-base: color .2s cubic-bezier(.645, .045, .355, 1) !default;
+
+/* Color
+-------------------------- */
+/// color|1|Brand Color|0
+$--oc-color-primary: #409EFF !default;
+/// color|1|Background Color|4
+$--oc-color-white: #FFFFFF !default;
+/// color|1|Background Color|4
+$--oc-color-black: #000000 !default;
+$--oc-color-primary-light-1: mix($--oc-color-white, $--oc-color-primary, 10%) !default;
+/* 53a8ff */
+$--oc-color-primary-light-2: mix($--oc-color-white, $--oc-color-primary, 20%) !default;
+/* 66b1ff */
+$--oc-color-primary-light-3: mix($--oc-color-white, $--oc-color-primary, 30%) !default;
+/* 79bbff */
+$--oc-color-primary-light-4: mix($--oc-color-white, $--oc-color-primary, 40%) !default;
+/* 8cc5ff */
+$--oc-color-primary-light-5: mix($--oc-color-white, $--oc-color-primary, 50%) !default;
+/* a0cfff */
+$--oc-color-primary-light-6: mix($--oc-color-white, $--oc-color-primary, 60%) !default;
+/* b3d8ff */
+$--oc-color-primary-light-7: mix($--oc-color-white, $--oc-color-primary, 70%) !default;
+/* c6e2ff */
+$--oc-color-primary-light-8: mix($--oc-color-white, $--oc-color-primary, 80%) !default;
+/* d9ecff */
+$--oc-color-primary-light-9: mix($--oc-color-white, $--oc-color-primary, 90%) !default;
+/* ecf5ff */
+/// color|1|Functional Color|1
+$--oc-color-success: #67C23A !default;
+/// color|1|Functional Color|1
+$--oc-color-warning: #E6A23C !default;
+/// color|1|Functional Color|1
+$--oc-color-danger: #F56C6C !default;
+/// color|1|Functional Color|1
+$--oc-color-info: #909399 !default;
+
+$--oc-color-success-light: mix($--oc-color-white, $--oc-color-success, 80%) !default;
+$--oc-color-warning-light: mix($--oc-color-white, $--oc-color-warning, 80%) !default;
+$--oc-color-danger-light: mix($--oc-color-white, $--oc-color-danger, 80%) !default;
+$--oc-color-info-light: mix($--oc-color-white, $--oc-color-info, 80%) !default;
+
+$--oc-color-success-lighter: mix($--oc-color-white, $--oc-color-success, 90%) !default;
+$--oc-color-warning-lighter: mix($--oc-color-white, $--oc-color-warning, 90%) !default;
+$--oc-color-danger-lighter: mix($--oc-color-white, $--oc-color-danger, 90%) !default;
+$--oc-color-info-lighter: mix($--oc-color-white, $--oc-color-info, 90%) !default;
+/// color|1|Font Color|2
+$--oc-color-text-primary: #303133 !default;
+/// color|1|Font Color|2
+$--oc-color-text-regular: #606266 !default;
+/// color|1|Font Color|2
+$--oc-color-text-secondary: #909399 !default;
+/// color|1|Font Color|2
+$--oc-color-text-placeholder: #C0C4CC !default;
+/// color|1|Border Color|3
+$--oc-border-color-base: #DCDFE6 !default;
+/// color|1|Border Color|3
+$--oc-border-color-light: #E4E7ED !default;
+/// color|1|Border Color|3
+$--oc-border-color-lighter: #EBEEF5 !default;
+/// color|1|Border Color|3
+$--oc-border-color-extra-light: #F2F6FC !default;
+
+// Background
+/// color|1|Background Color|4
+$--oc-background-color-base: #F5F7FA !default;
+
+/* Link
+-------------------------- */
+$--oc-link-color: $--oc-color-primary-light-2 !default;
+$--oc-link-hover-color: $--oc-color-primary !default;
+
+/* Border
+-------------------------- */
+$--oc-border-width-base: 1px !default;
+$--oc-border-style-base: solid !default;
+$--oc-border-color-hover: $--oc-color-text-placeholder !default;
+$--oc-border-base: $--oc-border-width-base $--oc-border-style-base $--oc-border-color-base !default;
+/// borderRadius|1|Radius|0
+$--oc-border-radius-base: 4px !default;
+/// borderRadius|1|Radius|0
+$--oc-border-radius-small: 2px !default;
+/// borderRadius|1|Radius|0
+$--oc-border-radius-circle: 100% !default;
+/// borderRadius|1|Radius|0
+$--oc-border-radius-zero: 0 !default;
+
+// Box-shadow
+/// boxShadow|1|Shadow|1
+$--oc-box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12),
+0 0 6px rgba(0, 0, 0, .04) !default;
+// boxShadow|1|Shadow|1
+$--oc-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12),
+0 0 6px rgba(0, 0, 0, .12) !default;
+/// boxShadow|1|Shadow|1
+$--oc-box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+/// boxShadow|1|Shadow|1
+$--oc-box-shadow-lighter: 0 2px 16px 0 rgba(0, 0, 0, 0.08) !default;
+
+// Site-base
+/// theme
+$--oc-color-theme: #f8b62b !default;
+$--oc-color-theme-light-1: mix($--oc-color-white, $--oc-color-theme, 10%) !default;
+$--oc-color-theme-light-2: mix($--oc-color-white, $--oc-color-theme, 20%) !default;
+$--oc-color-theme-light-3: mix($--oc-color-white, $--oc-color-theme, 30%) !default;
+$--oc-color-theme-light-4: mix($--oc-color-white, $--oc-color-theme, 40%) !default;
+$--oc-color-theme-light-5: mix($--oc-color-white, $--oc-color-theme, 50%) !default;
+$--oc-color-theme-light-6: mix($--oc-color-white, $--oc-color-theme, 60%) !default;
+$--oc-color-theme-light-7: mix($--oc-color-white, $--oc-color-theme, 70%) !default;
+$--oc-color-theme-light-8: mix($--oc-color-white, $--oc-color-theme, 80%) !default;
+$--oc-color-theme-light-9: mix($--oc-color-white, $--oc-color-theme, 90%) !default;
