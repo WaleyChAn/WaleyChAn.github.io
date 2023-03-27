@@ -4,13 +4,16 @@ import router from './router'
 import store from './store'
 import http from './plugin/http'
 import './plugin/permission'
+
 import '@/assets/css/font-awesome.css'
 import '@/assets/css/site.scss'
 
+import '@/mock'
+// development only
+// process.env.VUE_APP_MOCK && require('@/mock')
+
 Vue.config.productionTip = false
 Vue.prototype.$http = http
-
-process.env.VUE_APP_MOCK && require('@/mock')
 
 new Vue({
   router,
