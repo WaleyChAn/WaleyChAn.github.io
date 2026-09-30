@@ -14,6 +14,10 @@ WASD / arrow keys to walk, mouse wheel to zoom, R or the reset icon to restart.
 Touch devices have directional buttons. Normal gameplay has no explanatory text overlays.
 A visible error message is retained when WebGL or model loading fails.
 
+The default framing follows the supplied sketch: centered character with feet near
+63% of viewport height; the planet fills the lower frame. Walking speed is tuned
+to the short stride rather than sliding the character rapidly across the surface.
+
 ## Assets
 
 `assets-source/tabby/` contains the editable Blender source, reproducible build scripts,
@@ -29,7 +33,7 @@ old website. The old app can also be recovered from Git history.
 
 ## Current scope
 
-One playable tabby, a larger centered planet (radius 12), and room for later scenery.
+One playable tabby, a larger planet (radius 18) in a horizon composition, and room for later scenery.
 The other two cats, wandering NPCs, houses and biomes are later milestones.
 Cloud browser WebGL is currently unavailable, so browser visual acceptance of this
 revision is done by opening the deployed site locally. Passing Node/Blender checks

@@ -11,7 +11,7 @@ report={'file_bytes':os.path.getsize(path),'glb_version':2,'triangles':sum(j['ac
 for a in j['animations']:
  duration=max(j['accessors'][s['input']]['max'][0] for s in a['samplers']);report['clips'].append({'name':a['name'],'duration_seconds':duration,'channels':len(a['channels'])})
 assert set(a['name'] for a in j['animations'])=={'Idle','Walk'}
-assert len(rig.data.bones)==8
+assert len(rig.data.bones)==24
 for ob in meshes:
  print('MESH CHECK',ob.name,len(ob.vertex_groups));assert len(ob.vertex_groups)>0 or ob.name.startswith('Icosphere')
  assert all(math.isfinite(c) for v in ob.data.vertices for c in v.co)

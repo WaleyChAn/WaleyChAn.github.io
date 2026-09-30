@@ -3,9 +3,10 @@
 Open the published GitHub Pages homepage in a browser with WebGL 2 enabled.
 The current release is identified by `/version.json`.
 
-- Confirm the planet is centered and no title, intro, or status copy is visible.
+- Confirm the character is centered above a planet arc filling the lower screen and no title, intro, or status copy is visible.
 - Confirm the new cat has a fuller body, continuous arms, rounded triangular ears,
-  a cream spotted back, and a rounded striped tail.
+  a cream spotted back, painted shoulders, and a rounded striped tail.
+- Wait for an idle blink, ear flick and tail motion.
 - Use WASD / arrow keys to walk; release to return to Idle.
 - Walk around the planet and check surface contact and camera follow.
 - Use the mouse wheel to inspect the character closer; R / reset restores the view.

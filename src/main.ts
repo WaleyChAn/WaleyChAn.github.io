@@ -2,6 +2,7 @@ import './style.css';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { advance, createState, RADIUS } from './movement';
+import { composeCamera } from './composition';
 const canvas = document.querySelector<HTMLCanvasElement>('#world')!;
 const status = document.querySelector<HTMLSpanElement>('#status')!;
 const dot = document.querySelector<HTMLElement>('#status-dot')!;
@@ -53,7 +54,7 @@ function start() {
   const sun = new THREE.DirectionalLight(0xffefd8,4);scene.add(sun);scene.add(sun.target);
   sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-7;sun.shadow.camera.right=7;sun.shadow.camera.top=7;sun.shadow.camera.bottom=-7;sun.shadow.camera.near=.1;sun.shadow.camera.far=45;sun.shadow.bias=-.00015;sun.shadow.normalBias=.025;
   let mixer: THREE.AnimationMixer|undefined; let idle:THREE.AnimationAction|undefined;let walk:THREE.AnimationAction|undefined;let loaded=false;let wasWalking=false;
-  new GLTFLoader().load('/models/tabby.glb?v=20260930-r2',gltf=>{
+  new GLTFLoader().load('/models/tabby.glb?v=20260930-r3',gltf=>{
     const model=gltf.scene;const box=new THREE.Box3().setFromObject(model);const size=box.getSize(new THREE.Vector3());
     const scale=2.5/size.y;model.scale.setScalar(scale);model.position.y=-box.min.y*scale;
     model.traverse(obj=>{if(obj instanceof THREE.Mesh){obj.castShadow=true;obj.receiveShadow=true;}});
@@ -67,9 +68,8 @@ function start() {
   function place(snap=false){
     actor.position.copy(state.normal).multiplyScalar(RADIUS+.02);
     right.crossVectors(state.normal,state.forward).normalize();basis.makeBasis(right,state.normal,state.forward);actor.quaternion.setFromRotationMatrix(basis);
-    const framing = Math.max(1, .95 / camera.aspect)*zoom;
-    desiredPosition.copy(state.normal).multiplyScalar((RADIUS+18)*framing).addScaledVector(state.cameraBack,37*framing);
-    desiredUp.copy(state.normal);target.copy(state.normal).multiplyScalar(THREE.MathUtils.lerp(RADIUS*.10,RADIUS+1,THREE.MathUtils.clamp((1-zoom)/.4,0,1)));
+    composeCamera(state.normal,state.cameraBack,zoom,desiredPosition,target);
+    desiredUp.copy(state.normal);
     if(snap){camera.position.copy(desiredPosition);camera.up.copy(desiredUp);}camera.lookAt(target);
     const lightRight=new THREE.Vector3().crossVectors(state.normal,state.cameraBack).normalize();sun.position.copy(actor.position).addScaledVector(state.normal,12).addScaledVector(state.cameraBack,8).addScaledVector(lightRight,-7);sun.target.position.copy(actor.position);
   }
@@ -88,7 +88,7 @@ function start() {
     const walking=loaded&&advance(state,x,z,dt);
     if(loaded&&walking!==wasWalking){
       const from=walking?idle!:walk!;const to=walking?walk!:idle!;
-      to.reset().setEffectiveTimeScale(1).setEffectiveWeight(1).play();from.crossFadeTo(to,.2,false);
+      to.reset().setEffectiveTimeScale(walking?1.8:1).setEffectiveWeight(1).play();from.crossFadeTo(to,.2,false);
       status.textContent=walking?'虎斑猫正在行走':'虎斑猫已就绪 · 待机';wasWalking=walking;
     }
     mixer?.update(dt);place();const damping=1-Math.exp(-9*dt);camera.position.lerp(desiredPosition,damping);camera.up.lerp(desiredUp,damping).normalize();camera.lookAt(target);renderer.render(scene,camera);

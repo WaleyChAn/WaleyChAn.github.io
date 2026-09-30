@@ -1,6 +1,6 @@
 import { Quaternion, Vector3 } from 'three';
-export const RADIUS = 12;
-export const SPEED = 2.25;
+export const RADIUS = 18;
+export const SPEED = 0.72;
 export type SurfaceState = { normal: Vector3; forward: Vector3; cameraBack: Vector3; distance: number };
 export function createState(): SurfaceState { return { normal: new Vector3(0,1,0), forward: new Vector3(0,0,1), cameraBack: new Vector3(0,0,1), distance: 0 }; }
 /** Exponential-map step on a sphere; parallel transport preserves the local frame. */
