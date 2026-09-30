@@ -1,0 +1,52 @@
+{
+  "file_bytes": 2237068,
+  "glb_version": 2,
+  "triangles": 56068,
+  "exported_vertices": 29315,
+  "material_primitives": 7,
+  "bones": 8,
+  "clips": [
+    {
+      "name": "Idle",
+      "duration_seconds": 3,
+      "channels": 24
+    },
+    {
+      "name": "Walk",
+      "duration_seconds": 1,
+      "channels": 24
+    }
+  ],
+  "rest_bounds_blender_xyz": [
+    [
+      -1.1386148929595947,
+      -0.9457983374595642,
+      -1.3762239478862164e-29
+    ],
+    [
+      1.1391489505767822,
+      0.9472955465316772,
+      2.6318321228027344
+    ]
+  ],
+  "height": 2.6318321228027344,
+  "gltf_forward": "+Z",
+  "gltf_up": "+Y",
+  "root_origin": "foot plane, (0,0,0)",
+  "reimport_passed": true,
+  "gpu_estimate_bytes_geometry": 2095308,
+  "texture_dimensions": [
+    [
+      2048,
+      1024
+    ],
+    [
+      2048,
+      1024
+    ],
+    [
+      128,
+      512
+    ]
+  ]
+}

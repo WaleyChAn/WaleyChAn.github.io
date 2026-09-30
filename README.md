@@ -1,26 +1,36 @@
-# web
+# Cat Planet
 
-## Project setup
-```
-npm install
-```
+A quiet, interactive Three.js homepage with a Blender-authored chubby tabby.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Develop
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Node.js 22+ and npm are required. Run `npm ci`, then `npm run dev`.
+`npm test` checks the GLB container, skeleton, animation contract, and spherical movement.
+`npm run build` creates the static site in `dist/`.
 
-### Run your tests
-```
-npm run test
-```
+## Controls
 
-### Lints and fixes files
-```
-npm run lint
-```
+WASD / arrow keys to walk, mouse wheel to zoom, R or the reset icon to restart.
+Touch devices have directional buttons. Normal gameplay has no explanatory text overlays.
+A visible error message is retained when WebGL or model loading fails.
+
+## Assets
+
+`assets-source/tabby/` contains the editable Blender source, reproducible build scripts,
+actual orthographic front/side/back renders and animation verification.
+`public/models/tabby.glb` is the self-contained runtime model, with Idle and Walk clips.
+
+## Deployment
+
+The source lives on `master`. GitHub Pages serves the static output from the root
+of `gh-pages`. Build before updating that branch; do not copy source files or
+credentials to the published output. `docs/` remains an unchanged archive of the
+old website. The old app can also be recovered from Git history.
+
+## Current scope
+
+One playable tabby, a larger centered planet (radius 12), and room for later scenery.
+The other two cats, wandering NPCs, houses and biomes are later milestones.
+Cloud browser WebGL is currently unavailable, so browser visual acceptance of this
+revision is done by opening the deployed site locally. Passing Node/Blender checks
+is not a substitute for browser interaction testing.

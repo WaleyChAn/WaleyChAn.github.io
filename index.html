@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#f6f0e6"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Waley · Cat Planet</title></head>
+<body><div id="app"><canvas id="world" aria-label="猫猫星球，使用 WASD 或方向键行走，R 回到起点"></canvas>
+<div class="sr-only" role="status"><i id="status-dot"></i><span id="status">正在准备模型</span></div>
+<aside id="error" hidden><h2>暂时无法打开三维预览</h2><p id="error-message"></p><button id="retry">重新加载</button></aside>
+<button id="reset" title="回到起点 · R" aria-label="回到起点">↺</button>
+<div class="touch-controls" aria-label="触屏方向控制"><button data-key="KeyW" aria-label="向前">↑</button><div><button data-key="KeyA" aria-label="向左">←</button><button data-key="KeyS" aria-label="向后">↓</button><button data-key="KeyD" aria-label="向右">→</button></div></div>
+</div><script type="module" src="/src/main.ts"></script></body></html>
