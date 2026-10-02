@@ -23,3 +23,24 @@ yarn-error.log*
 # Blender automatic backups
 *.blend1
 *.blend2
+
+# Local Python caches from asset tooling
+__pycache__/
+*.py[cod]
+
+# Generated demonstration images are disposable, not source/reference assets.
+# Keep new local previews in artifacts/model-previews/ (or outside this repo).
+/artifacts/model-previews/
+/artifacts/model-renders/
+/artifacts/model-demos/
+/artifacts/browser-screenshots/
+/assets-source/**/previews/
+/assets-source/**/*-previews/
+/assets-source/**/pre-bevel-cycle/
+/assets-source/**/renders/
+/assets-source/**/render-output/
+/assets-source/**/preview-output/
+/assets-source/**/demo-output/
+/assets-source/**/demo-frames/
+/assets-source/**/frames/
+/assets-source/**/screenshots/
