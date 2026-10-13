@@ -1,8 +1,8 @@
 {
   "version": 3,
   "status": "ready",
-  "author": "Kay Lousberg",
-  "license": "CC0-1.0",
+  "author": "Mixed sources; see each asset entry and provenance",
+  "license": "See asset-specific provenance",
   "character": {
     "file": "/assets/kaykit/character.glb",
     "sourceAsset": "Barbarian.glb",
@@ -31,7 +31,9 @@
       "Rig_Medium_MovementBasic.glb"
     ],
     "appearance": "Capeless Barbarian with short belt and bear hat; no cape, cloak or long skirt geometry",
-    "textureSha256": "f11434d3e5e4df929dacd2c69d15734effb82babf8176a80bb040d2007f5f882"
+    "textureSha256": "f11434d3e5e4df929dacd2c69d15734effb82babf8176a80bb040d2007f5f882",
+    "license": "CC0-1.0",
+    "author": "Kay Lousberg"
   },
   "environment": {
     "house": {
@@ -51,7 +53,9 @@
       },
       "bytes": 72528,
       "sha256": "32e3b7d10ea94b160582d113540ba8135095050a81d7225cc5e210854381cb9d",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "house2": {
       "file": "/assets/kaykit/house2.glb",
@@ -70,7 +74,9 @@
       },
       "bytes": 99292,
       "sha256": "b4d2ad0f43ea8295e4d55c4c9bc6a90687c8bab108c6110163eb2648efb0315a",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "tavern": {
       "file": "/assets/kaykit/tavern.glb",
@@ -89,7 +95,9 @@
       },
       "bytes": 188032,
       "sha256": "bebf5b3afef2772a437fa943f4e3d3e29972098c06c9ab3043bec7ee346d4231",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "windmill": {
       "file": "/assets/kaykit/windmill.glb",
@@ -108,7 +116,9 @@
       },
       "bytes": 160444,
       "sha256": "a3a7d183555dcd2b1e6219a7d0cd16a7ff0beeb94cf3cb8e4622beda4efa6a07",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "well": {
       "file": "/assets/kaykit/well.glb",
@@ -127,7 +137,9 @@
       },
       "bytes": 59520,
       "sha256": "aa17c9346650e38bd5e6f7efa4dec74f594104c3163babcef684eb3a54e2ebaf",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "tree": {
       "file": "/assets/kaykit/tree.glb",
@@ -146,7 +158,9 @@
       },
       "bytes": 20496,
       "sha256": "5e19530e292a57ae958276b50ecca174966c96df798aa42e71cc82c764965780",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "tree2": {
       "file": "/assets/kaykit/tree2.glb",
@@ -165,7 +179,9 @@
       },
       "bytes": 24520,
       "sha256": "936184d1adbb90b3b0ff110e278def83b52c17dee81fd0997a275086d391a875",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "rock": {
       "file": "/assets/kaykit/rock.glb",
@@ -184,7 +200,9 @@
       },
       "bytes": 18508,
       "sha256": "01c1471596c1d4137432f304c5e5ad23041235ca58eb7617ce760c7f23363209",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "barrel": {
       "file": "/assets/kaykit/barrel.glb",
@@ -203,7 +221,9 @@
       },
       "bytes": 32700,
       "sha256": "6ed9083cf3bfb175ad1407105232a0139b2d77085329750a3bd8404b5b434132",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "crate": {
       "file": "/assets/kaykit/crate.glb",
@@ -222,7 +242,9 @@
       },
       "bytes": 24156,
       "sha256": "0a5db126818b48a7efed55add4f23e479a22ab4ca0f6d3d5cd9eafc7b596b969",
-      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "forestTree1": {
       "file": "/assets/kaykit/forestTree1.glb",
@@ -243,7 +265,9 @@
       "bytes": 67544,
       "sha256": "4d362b32e3d600ebc9cedba044abc9bd89e91b02cc611f4a4ba7c06206bb0e29",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "forestTree2": {
       "file": "/assets/kaykit/forestTree2.glb",
@@ -264,7 +288,9 @@
       "bytes": 58244,
       "sha256": "9c83913b3d2af0fedb20264e7d0186b284c4fc098b24205daa2dda5911c8cf03",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "forestTree3": {
       "file": "/assets/kaykit/forestTree3.glb",
@@ -285,7 +311,9 @@
       "bytes": 79800,
       "sha256": "d70917df0ed1d086446e76ac66c155d6630d7b3841c6c103513c0f55f5e9b59c",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "forestTree4": {
       "file": "/assets/kaykit/forestTree4.glb",
@@ -306,7 +334,9 @@
       "bytes": 62624,
       "sha256": "d9c71f5438002b3782d8cdbcecb508f3ab12aa938131b1421edf70cf977de728",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "deadTree": {
       "file": "/assets/kaykit/deadTree.glb",
@@ -327,7 +357,9 @@
       "bytes": 65068,
       "sha256": "fc4da24b4f628a3fbdcc30eb99e10ff74617bf23f091017ecc03c2884138eeae",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "bush1": {
       "file": "/assets/kaykit/bush1.glb",
@@ -348,7 +380,9 @@
       "bytes": 52404,
       "sha256": "6f5a440710d470ccd91de4f72538997269da716ffdd88f5f04c8cf0c7cdf7a02",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "bush2": {
       "file": "/assets/kaykit/bush2.glb",
@@ -369,7 +403,9 @@
       "bytes": 55300,
       "sha256": "285401a49da71b683da07f590b1262d846cde5a38a5f4ef198ad4e427803c245",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "grass": {
       "file": "/assets/kaykit/grass.glb",
@@ -390,7 +426,9 @@
       "bytes": 52112,
       "sha256": "1123ae97b8364fb9cd48601edbb2704ca37bb5a27f5d0d482df4f00cb1e0ee6e",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "forestRock1": {
       "file": "/assets/kaykit/forestRock1.glb",
@@ -411,7 +449,9 @@
       "bytes": 54824,
       "sha256": "8df0def864621145168296b5a11a3941a9508ef921d2b07286e71976ca0032f5",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "forestRock2": {
       "file": "/assets/kaykit/forestRock2.glb",
@@ -432,7 +472,9 @@
       "bytes": 55260,
       "sha256": "3160ed8c6687a1124db473478c983ffbc0770d12093ddeb0b821ea85b33ecf91",
       "primitiveCount": 1,
-      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "ruinArch": {
       "file": "/assets/kaykit/ruinArch.glb",
@@ -454,7 +496,9 @@
       "bytes": 46576,
       "sha256": "f474b334aa0d592e052c860ca5a15f5f3494b9b06a340f1085d1ecdbd5170014",
       "primitiveCount": 1,
-      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "ruinWall": {
       "file": "/assets/kaykit/ruinWall.glb",
@@ -475,7 +519,9 @@
       "bytes": 121624,
       "sha256": "3d6e7a09c2e63d35c053a19e8bdfabaecb5aabaab9830951942b45aff0a47dce",
       "primitiveCount": 1,
-      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "ruinPillar": {
       "file": "/assets/kaykit/ruinPillar.glb",
@@ -496,7 +542,9 @@
       "bytes": 62356,
       "sha256": "23a8ed003860e7fc329978eba050525d68cd975631c44c42c6c9bc6561e66e1e",
       "primitiveCount": 1,
-      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "ruinRubble": {
       "file": "/assets/kaykit/ruinRubble.glb",
@@ -517,7 +565,9 @@
       "bytes": 61532,
       "sha256": "6ee33793d82373444788808518a3d65b6a1a0cf42641dcb19540e6ce0839a400",
       "primitiveCount": 1,
-      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "torch": {
       "file": "/assets/kaykit/torch.glb",
@@ -538,7 +588,9 @@
       "bytes": 30180,
       "sha256": "2715586fc12cac36404d396daa5fc541e985994dee0e433a483fb7123a852fcc",
       "primitiveCount": 1,
-      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "chest": {
       "file": "/assets/kaykit/chest.glb",
@@ -559,7 +611,9 @@
       "bytes": 59652,
       "sha256": "897b2c3597fb1397d8a86f2ad1d8e1867ba5aca8af723b2f6502198b0a6ec139",
       "primitiveCount": 2,
-      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "woodLog": {
       "file": "/assets/kaykit/woodLog.glb",
@@ -580,7 +634,9 @@
       "bytes": 67412,
       "sha256": "f081a465f37e8b8e6c273fa240eff02f2225a3cab4f478ff48b3a83bcbb0a981",
       "primitiveCount": 1,
-      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "woodPile": {
       "file": "/assets/kaykit/woodPile.glb",
@@ -601,7 +657,9 @@
       "bytes": 74040,
       "sha256": "a267ac6604a46cafddcc1fdc2af3123705adc83d3643826c462e8cb44d9afd92",
       "primitiveCount": 1,
-      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "stonePile": {
       "file": "/assets/kaykit/stonePile.glb",
@@ -622,7 +680,9 @@
       "bytes": 117092,
       "sha256": "f37d46c598673badea371c29766cd4b77b92afe4cfad649f2111cc19e87fba23",
       "primitiveCount": 1,
-      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "ironOre": {
       "file": "/assets/kaykit/ironOre.glb",
@@ -643,7 +703,9 @@
       "bytes": 53392,
       "sha256": "5ec32a8719272c910ecb511dc47151ffda43adb2b71798cf6b6cf75e965d5ac0",
       "primitiveCount": 1,
-      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "goldOre": {
       "file": "/assets/kaykit/goldOre.glb",
@@ -664,7 +726,9 @@
       "bytes": 53648,
       "sha256": "2fae1d987c9da77f4088435155c160e2c433569c63830cd499ec66043f15ba39",
       "primitiveCount": 1,
-      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
     },
     "copperOre": {
       "file": "/assets/kaykit/copperOre.glb",
@@ -685,7 +749,73 @@
       "bytes": 53204,
       "sha256": "d8284869dc1211c744f7c3b00f075111b3646fabf10cf200675896537c15ac79",
       "primitiveCount": 1,
-      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b",
+      "license": "CC0-1.0",
+      "author": "Kay Lousberg"
+    },
+    "craftedFence": {
+      "file": "/assets/authored/craftedFence.glb",
+      "sourceAsset": "Original procedural Blender model: craftedFence",
+      "author": "Original environment asset created for this project",
+      "provenance": "Original project asset created in Blender; no third-party mesh or texture input; not a KayKit asset.",
+      "bounds": {
+        "min": [
+          -0.9554842710494995,
+          -0.0008567273616790771,
+          -0.06499999761581421
+        ],
+        "max": [
+          0.9554843902587891,
+          0.7549999952316284,
+          0.06949999928474426
+        ]
+      },
+      "triangles": 232,
+      "bytes": 20980,
+      "sha256": "48e56b4ac757bee8308128558fe8a7b8c2e3884dfd73123edbd2b6ab0e2e4393"
+    },
+    "craftedWall": {
+      "file": "/assets/authored/craftedWall.glb",
+      "sourceAsset": "Original procedural Blender model: craftedWall",
+      "author": "Original environment asset created for this project",
+      "provenance": "Original project asset created in Blender; no third-party mesh or texture input; not a KayKit asset.",
+      "bounds": {
+        "min": [
+          -1.0199999809265137,
+          0.0,
+          -0.15600000321865082
+        ],
+        "max": [
+          1.0,
+          0.5559999942779541,
+          0.1550000011920929
+        ]
+      },
+      "triangles": 224,
+      "bytes": 13252,
+      "sha256": "a5731324dd89050247ea0f27162f72d50f32163c06e9737db9f87284eb6d298d"
+    },
+    "craftedMeadow": {
+      "file": "/assets/authored/craftedMeadow.glb",
+      "sourceAsset": "Original procedural Blender model: craftedMeadow",
+      "author": "Original environment asset created for this project",
+      "provenance": "Original project asset created in Blender; no third-party mesh or texture input; not a KayKit asset.",
+      "bounds": {
+        "min": [
+          -0.3102644979953766,
+          0.0,
+          -0.30628645420074463
+        ],
+        "max": [
+          0.25239795446395874,
+          0.25600001215934753,
+          0.32492461800575256
+        ]
+      },
+      "triangles": 42,
+      "bytes": 5424,
+      "sha256": "f6462660ef0b9e7855248b0836b21a9338b89c5be3d52d2d67de7c4d9e9e8303"
     }
-  }
+  },
+  "licenseScope": "CC0-1.0 applies to the KayKit-source assets. /assets/authored/ contains original project assets, separately attributed; see its PROVENANCE.md."
 }
