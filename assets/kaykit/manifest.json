@@ -9,7 +9,7 @@
     "bounds": {
       "min": [
         -0.971257746219635,
-        -1.635819657508364e-8,
+        -1.635819657508364e-08,
         -0.5253046154975891
       ],
       "max": [
@@ -31,7 +31,7 @@
       "Rig_Medium_MovementBasic.glb"
     ],
     "appearance": "Capeless Barbarian with short belt and bear hat; no cape, cloak or long skirt geometry",
-    "visualCheck": "Blender CPU renders reviewed at 0%, 25%, 50%, 75% of Idle_A, Walking_A and Running_A, front and rear views. No obvious garment intersections observed in those samples; browser live view not verified here."
+    "textureSha256": "f11434d3e5e4df929dacd2c69d15734effb82babf8176a80bb040d2007f5f882"
   },
   "environment": {
     "house": {
@@ -40,7 +40,7 @@
       "bounds": {
         "min": [
           -0.39597994089126587,
-          -2.086162709247219e-8,
+          -2.086162709247219e-08,
           -0.46865156292915344
         ],
         "max": [
@@ -50,7 +50,8 @@
         ]
       },
       "bytes": 72528,
-      "sha256": "32e3b7d10ea94b160582d113540ba8135095050a81d7225cc5e210854381cb9d"
+      "sha256": "32e3b7d10ea94b160582d113540ba8135095050a81d7225cc5e210854381cb9d",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "house2": {
       "file": "/assets/kaykit/house2.glb",
@@ -58,7 +59,7 @@
       "bounds": {
         "min": [
           -0.43875277042388916,
-          -2.086162709247219e-8,
+          -2.086162709247219e-08,
           -0.5386515855789185
         ],
         "max": [
@@ -68,7 +69,8 @@
         ]
       },
       "bytes": 99292,
-      "sha256": "b4d2ad0f43ea8295e4d55c4c9bc6a90687c8bab108c6110163eb2648efb0315a"
+      "sha256": "b4d2ad0f43ea8295e4d55c4c9bc6a90687c8bab108c6110163eb2648efb0315a",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "tavern": {
       "file": "/assets/kaykit/tavern.glb",
@@ -76,7 +78,7 @@
       "bounds": {
         "min": [
           -0.5949788689613342,
-          -0.0000030875205538904993,
+          -3.0875205538904993e-06,
           -0.7023168802261353
         ],
         "max": [
@@ -86,7 +88,8 @@
         ]
       },
       "bytes": 188032,
-      "sha256": "bebf5b3afef2772a437fa943f4e3d3e29972098c06c9ab3043bec7ee346d4231"
+      "sha256": "bebf5b3afef2772a437fa943f4e3d3e29972098c06c9ab3043bec7ee346d4231",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "windmill": {
       "file": "/assets/kaykit/windmill.glb",
@@ -94,7 +97,7 @@
       "bounds": {
         "min": [
           -0.5578987002372742,
-          -0.000014480118807114195,
+          -1.4480118807114195e-05,
           -0.37893959879875183
         ],
         "max": [
@@ -104,7 +107,8 @@
         ]
       },
       "bytes": 160444,
-      "sha256": "a3a7d183555dcd2b1e6219a7d0cd16a7ff0beeb94cf3cb8e4622beda4efa6a07"
+      "sha256": "a3a7d183555dcd2b1e6219a7d0cd16a7ff0beeb94cf3cb8e4622beda4efa6a07",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "well": {
       "file": "/assets/kaykit/well.glb",
@@ -112,7 +116,7 @@
       "bounds": {
         "min": [
           -0.31495729088783264,
-          -0.000001611560833225667,
+          -1.611560833225667e-06,
           -0.3753618001937866
         ],
         "max": [
@@ -122,7 +126,8 @@
         ]
       },
       "bytes": 59520,
-      "sha256": "aa17c9346650e38bd5e6f7efa4dec74f594104c3163babcef684eb3a54e2ebaf"
+      "sha256": "aa17c9346650e38bd5e6f7efa4dec74f594104c3163babcef684eb3a54e2ebaf",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "tree": {
       "file": "/assets/kaykit/tree.glb",
@@ -140,7 +145,8 @@
         ]
       },
       "bytes": 20496,
-      "sha256": "5e19530e292a57ae958276b50ecca174966c96df798aa42e71cc82c764965780"
+      "sha256": "5e19530e292a57ae958276b50ecca174966c96df798aa42e71cc82c764965780",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "tree2": {
       "file": "/assets/kaykit/tree2.glb",
@@ -158,7 +164,8 @@
         ]
       },
       "bytes": 24520,
-      "sha256": "936184d1adbb90b3b0ff110e278def83b52c17dee81fd0997a275086d391a875"
+      "sha256": "936184d1adbb90b3b0ff110e278def83b52c17dee81fd0997a275086d391a875",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "rock": {
       "file": "/assets/kaykit/rock.glb",
@@ -176,7 +183,8 @@
         ]
       },
       "bytes": 18508,
-      "sha256": "01c1471596c1d4137432f304c5e5ad23041235ca58eb7617ce760c7f23363209"
+      "sha256": "01c1471596c1d4137432f304c5e5ad23041235ca58eb7617ce760c7f23363209",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "barrel": {
       "file": "/assets/kaykit/barrel.glb",
@@ -184,7 +192,7 @@
       "bounds": {
         "min": [
           -0.10073928534984589,
-          -1.0430813546236095e-8,
+          -1.0430813546236095e-08,
           -0.10073825716972351
         ],
         "max": [
@@ -194,7 +202,8 @@
         ]
       },
       "bytes": 32700,
-      "sha256": "6ed9083cf3bfb175ad1407105232a0139b2d77085329750a3bd8404b5b434132"
+      "sha256": "6ed9083cf3bfb175ad1407105232a0139b2d77085329750a3bd8404b5b434132",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
     "crate": {
       "file": "/assets/kaykit/crate.glb",
@@ -202,7 +211,7 @@
       "bounds": {
         "min": [
           -0.07000000029802322,
-          8.76188039455883e-7,
+          8.76188039455883e-07,
           -0.07000000029802322
         ],
         "max": [
@@ -212,21 +221,471 @@
         ]
       },
       "bytes": 24156,
-      "sha256": "0a5db126818b48a7efed55add4f23e479a22ab4ca0f6d3d5cd9eafc7b596b969"
-    }
-  },
-  "sources": [
-    {
-      "pack": "Adventurers",
-      "tier": "2.0 FREE",
-      "url": "https://kaylousberg.itch.io/kaykit-adventurers",
-      "sha256": "abe48f4763fba0896bab486ee9e6d08ca6b5b3884b9601f235c8847ae94dc479"
+      "sha256": "0a5db126818b48a7efed55add4f23e479a22ab4ca0f6d3d5cd9eafc7b596b969",
+      "textureSha256": "5301a06866ba3be68dcc14cc429bd6d0f69004b72884283715d7e233f2e9782e"
     },
-    {
-      "pack": "Medieval Hexagon",
-      "tier": "1.0 FREE",
-      "url": "https://kaylousberg.itch.io/kaykit-medieval-hexagon",
-      "sha256": "4fbb374c45732c88522bd3439e9415bf568c683236ede336b4e61d161155ba12"
+    "forestTree1": {
+      "file": "/assets/kaykit/forestTree1.glb",
+      "sourceAsset": "Tree_1_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -1.9345909357070923,
+          -0.26131799817085266,
+          -1.6255630254745483
+        ],
+        "max": [
+          1.2464021444320679,
+          3.899381160736084,
+          1.6255637407302856
+        ]
+      },
+      "bytes": 67544,
+      "sha256": "4d362b32e3d600ebc9cedba044abc9bd89e91b02cc611f4a4ba7c06206bb0e29",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "forestTree2": {
+      "file": "/assets/kaykit/forestTree2.glb",
+      "sourceAsset": "Tree_2_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -1.641092300415039,
+          -0.3735181987285614,
+          -1.2144396305084229
+        ],
+        "max": [
+          0.9589076042175293,
+          4.301268100738525,
+          0.7855601906776428
+        ]
+      },
+      "bytes": 58244,
+      "sha256": "9c83913b3d2af0fedb20264e7d0186b284c4fc098b24205daa2dda5911c8cf03",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "forestTree3": {
+      "file": "/assets/kaykit/forestTree3.glb",
+      "sourceAsset": "Tree_3_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -1.552119255065918,
+          -0.26131799817085266,
+          -1.5465991497039795
+        ],
+        "max": [
+          1.5410791635513306,
+          3.245279550552368,
+          1.5465989112854004
+        ]
+      },
+      "bytes": 79800,
+      "sha256": "d70917df0ed1d086446e76ac66c155d6630d7b3841c6c103513c0f55f5e9b59c",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "forestTree4": {
+      "file": "/assets/kaykit/forestTree4.glb",
+      "sourceAsset": "Tree_4_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.9600079655647278,
+          -0.34212493896484375,
+          -1.0196812152862549
+        ],
+        "max": [
+          1.0473434925079346,
+          4.932270050048828,
+          0.9846721291542053
+        ]
+      },
+      "bytes": 62624,
+      "sha256": "d9c71f5438002b3782d8cdbcecb508f3ab12aa938131b1421edf70cf977de728",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "deadTree": {
+      "file": "/assets/kaykit/deadTree.glb",
+      "sourceAsset": "Tree_Bare_2_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.6923141479492188,
+          -0.3583489954471588,
+          -0.20914950966835022
+        ],
+        "max": [
+          0.5040185451507568,
+          3.484485149383545,
+          0.39088335633277893
+        ]
+      },
+      "bytes": 65068,
+      "sha256": "fc4da24b4f628a3fbdcc30eb99e10ff74617bf23f091017ecc03c2884138eeae",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "bush1": {
+      "file": "/assets/kaykit/bush1.glb",
+      "sourceAsset": "Bush_1_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.13358834385871887,
+          -0.0029310714453458786,
+          -0.117043137550354
+        ],
+        "max": [
+          0.13358837366104126,
+          0.2237223982810974,
+          0.1170431524515152
+        ]
+      },
+      "bytes": 52404,
+      "sha256": "6f5a440710d470ccd91de4f72538997269da716ffdd88f5f04c8cf0c7cdf7a02",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "bush2": {
+      "file": "/assets/kaykit/bush2.glb",
+      "sourceAsset": "Bush_3_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.5165291428565979,
+          -0.025402218103408813,
+          -0.5165290832519531
+        ],
+        "max": [
+          0.5165290832519531,
+          0.459860622882843,
+          0.5165291428565979
+        ]
+      },
+      "bytes": 55300,
+      "sha256": "285401a49da71b683da07f590b1262d846cde5a38a5f4ef198ad4e427803c245",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "grass": {
+      "file": "/assets/kaykit/grass.glb",
+      "sourceAsset": "Grass_1_A_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.16962392628192902,
+          -0.019999999552965164,
+          -0.07838405668735504
+        ],
+        "max": [
+          0.1696312427520752,
+          0.5393414497375488,
+          0.07338599860668182
+        ]
+      },
+      "bytes": 52112,
+      "sha256": "1123ae97b8364fb9cd48601edbb2704ca37bb5a27f5d0d482df4f00cb1e0ee6e",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "forestRock1": {
+      "file": "/assets/kaykit/forestRock1.glb",
+      "sourceAsset": "Rock_1_D_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.38679447770118713,
+          0,
+          -0.6247491836547852
+        ],
+        "max": [
+          0.5402669906616211,
+          1.129973292350769,
+          0.5318676829338074
+        ]
+      },
+      "bytes": 54824,
+      "sha256": "8df0def864621145168296b5a11a3941a9508ef921d2b07286e71976ca0032f5",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "forestRock2": {
+      "file": "/assets/kaykit/forestRock2.glb",
+      "sourceAsset": "Rock_3_F_Color1.gltf",
+      "pack": "Forest Nature",
+      "bounds": {
+        "min": [
+          -0.5255821347236633,
+          -0.5879820585250854,
+          -0.590253472328186
+        ],
+        "max": [
+          0.5620192289352417,
+          0.5875235795974731,
+          0.5980848670005798
+        ]
+      },
+      "bytes": 55260,
+      "sha256": "3160ed8c6687a1124db473478c983ffbc0770d12093ddeb0b821ea85b33ecf91",
+      "primitiveCount": 1,
+      "textureSha256": "406c01e0ac1d3368fc7b26ff5fb0d3335ba5e48bd19a703540ed92ee3971ea39"
+    },
+    "ruinArch": {
+      "file": "/assets/kaykit/ruinArch.glb",
+      "sourceAsset": "wall_doorway.gltf",
+      "modification": "Removed separate door mesh to create an open stone entrance",
+      "pack": "Dungeon",
+      "bounds": {
+        "min": [
+          -2,
+          0,
+          -0.4999999701976776
+        ],
+        "max": [
+          2,
+          4,
+          0.4999999701976776
+        ]
+      },
+      "bytes": 46576,
+      "sha256": "f474b334aa0d592e052c860ca5a15f5f3494b9b06a340f1085d1ecdbd5170014",
+      "primitiveCount": 1,
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+    },
+    "ruinWall": {
+      "file": "/assets/kaykit/ruinWall.glb",
+      "sourceAsset": "wall_cracked.gltf",
+      "pack": "Dungeon",
+      "bounds": {
+        "min": [
+          -2,
+          0,
+          -0.6296948194503784
+        ],
+        "max": [
+          2,
+          4,
+          0.6296948194503784
+        ]
+      },
+      "bytes": 121624,
+      "sha256": "3d6e7a09c2e63d35c053a19e8bdfabaecb5aabaab9830951942b45aff0a47dce",
+      "primitiveCount": 1,
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+    },
+    "ruinPillar": {
+      "file": "/assets/kaykit/ruinPillar.glb",
+      "sourceAsset": "pillar_decorated.gltf",
+      "pack": "Dungeon",
+      "bounds": {
+        "min": [
+          -1.1159993410110474,
+          0,
+          -0.7499999403953552
+        ],
+        "max": [
+          1.116003155708313,
+          4,
+          0.9601638317108154
+        ]
+      },
+      "bytes": 62356,
+      "sha256": "23a8ed003860e7fc329978eba050525d68cd975631c44c42c6c9bc6561e66e1e",
+      "primitiveCount": 1,
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+    },
+    "ruinRubble": {
+      "file": "/assets/kaykit/ruinRubble.glb",
+      "sourceAsset": "rubble_large.gltf",
+      "pack": "Dungeon",
+      "bounds": {
+        "min": [
+          -4.068856716156006,
+          0,
+          -1.5856541395187378
+        ],
+        "max": [
+          4.060417175292969,
+          3.4960880279541016,
+          1.597455382347107
+        ]
+      },
+      "bytes": 61532,
+      "sha256": "6ee33793d82373444788808518a3d65b6a1a0cf42641dcb19540e6ce0839a400",
+      "primitiveCount": 1,
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+    },
+    "torch": {
+      "file": "/assets/kaykit/torch.glb",
+      "sourceAsset": "torch_lit.gltf",
+      "pack": "Dungeon",
+      "bounds": {
+        "min": [
+          -0.2751416563987732,
+          -0.395045667886734,
+          -0.2751416862010956
+        ],
+        "max": [
+          0.2751416862010956,
+          0.7307469248771667,
+          0.2751415967941284
+        ]
+      },
+      "bytes": 30180,
+      "sha256": "2715586fc12cac36404d396daa5fc541e985994dee0e433a483fb7123a852fcc",
+      "primitiveCount": 1,
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+    },
+    "chest": {
+      "file": "/assets/kaykit/chest.glb",
+      "sourceAsset": "chest.gltf",
+      "pack": "Dungeon",
+      "bounds": {
+        "min": [
+          -0.8500000238418579,
+          -2.384185791015625e-07,
+          -0.7000007927417755
+        ],
+        "max": [
+          0.8500000238418579,
+          1.300000011920929,
+          0.7458029985427856
+        ]
+      },
+      "bytes": 59652,
+      "sha256": "897b2c3597fb1397d8a86f2ad1d8e1867ba5aca8af723b2f6502198b0a6ec139",
+      "primitiveCount": 2,
+      "textureSha256": "ceb331d6ed53273da5e26808560bca8496f8f6ebc12d83b570c0e317560f1d03"
+    },
+    "woodLog": {
+      "file": "/assets/kaykit/woodLog.glb",
+      "sourceAsset": "Wood_Log_A.gltf",
+      "pack": "ResourceBits",
+      "bounds": {
+        "min": [
+          -0.35627028346061707,
+          -0.2758808434009552,
+          -0.6749634742736816
+        ],
+        "max": [
+          0.3650985658168793,
+          0.45747488737106323,
+          0.6750365495681763
+        ]
+      },
+      "bytes": 67412,
+      "sha256": "f081a465f37e8b8e6c273fa240eff02f2225a3cab4f478ff48b3a83bcbb0a981",
+      "primitiveCount": 1,
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+    },
+    "woodPile": {
+      "file": "/assets/kaykit/woodPile.glb",
+      "sourceAsset": "Wood_Planks_Stack_Medium.gltf",
+      "pack": "ResourceBits",
+      "bounds": {
+        "min": [
+          -0.8330650329589844,
+          -0.00659605860710144,
+          -0.8111829161643982
+        ],
+        "max": [
+          0.8330650329589844,
+          0.6165961027145386,
+          0.8040671348571777
+        ]
+      },
+      "bytes": 74040,
+      "sha256": "a267ac6604a46cafddcc1fdc2af3123705adc83d3643826c462e8cb44d9afd92",
+      "primitiveCount": 1,
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+    },
+    "stonePile": {
+      "file": "/assets/kaykit/stonePile.glb",
+      "sourceAsset": "Stone_Chunks_Large.gltf",
+      "pack": "ResourceBits",
+      "bounds": {
+        "min": [
+          -0.7641547322273254,
+          -0.03707057237625122,
+          -0.6718781590461731
+        ],
+        "max": [
+          0.736940860748291,
+          1.0401904582977295,
+          0.6740157008171082
+        ]
+      },
+      "bytes": 117092,
+      "sha256": "f37d46c598673badea371c29766cd4b77b92afe4cfad649f2111cc19e87fba23",
+      "primitiveCount": 1,
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+    },
+    "ironOre": {
+      "file": "/assets/kaykit/ironOre.glb",
+      "sourceAsset": "Iron_Nuggets.gltf",
+      "pack": "ResourceBits",
+      "bounds": {
+        "min": [
+          -0.38738375902175903,
+          -0.03194175288081169,
+          -0.44782787561416626
+        ],
+        "max": [
+          0.5414256453514099,
+          0.44296160340309143,
+          0.4022827744483948
+        ]
+      },
+      "bytes": 53392,
+      "sha256": "5ec32a8719272c910ecb511dc47151ffda43adb2b71798cf6b6cf75e965d5ac0",
+      "primitiveCount": 1,
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+    },
+    "goldOre": {
+      "file": "/assets/kaykit/goldOre.glb",
+      "sourceAsset": "Gold_Nuggets.gltf",
+      "pack": "ResourceBits",
+      "bounds": {
+        "min": [
+          -0.38738375902175903,
+          -0.03194175288081169,
+          -0.44782787561416626
+        ],
+        "max": [
+          0.5414256453514099,
+          0.44296160340309143,
+          0.4022827744483948
+        ]
+      },
+      "bytes": 53648,
+      "sha256": "2fae1d987c9da77f4088435155c160e2c433569c63830cd499ec66043f15ba39",
+      "primitiveCount": 1,
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
+    },
+    "copperOre": {
+      "file": "/assets/kaykit/copperOre.glb",
+      "sourceAsset": "Copper_Nuggets.gltf",
+      "pack": "ResourceBits",
+      "bounds": {
+        "min": [
+          -0.38738375902175903,
+          -0.03194175288081169,
+          -0.44782787561416626
+        ],
+        "max": [
+          0.5414256453514099,
+          0.44296160340309143,
+          0.4022827744483948
+        ]
+      },
+      "bytes": 53204,
+      "sha256": "d8284869dc1211c744f7c3b00f075111b3646fabf10cf200675896537c15ac79",
+      "primitiveCount": 1,
+      "textureSha256": "62a252aba7bc9382effe48d93b976605d8fa70a3a40af7fc52362f5ca89c135b"
     }
-  ]
+  }
 }
