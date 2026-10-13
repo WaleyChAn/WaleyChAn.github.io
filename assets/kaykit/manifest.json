@@ -5,21 +5,21 @@
   "license": "CC0-1.0",
   "character": {
     "file": "/assets/kaykit/character.glb",
-    "sourceAsset": "Ranger.glb",
+    "sourceAsset": "Barbarian.glb",
     "bounds": {
       "min": [
-        -0.9712555408477783,
-        -0.0020253092516213655,
-        -0.5143533945083618
+        -0.971257746219635,
+        -1.635819657508364e-8,
+        -0.5253046154975891
       ],
       "max": [
-        0.9712555408477783,
-        2.272925853729248,
-        0.5350261330604553
+        0.971257746219635,
+        2.3977746963500977,
+        0.738594651222229
       ]
     },
-    "bytes": 540636,
-    "sha256": "9b5b0c8a57b7f1946a677ab27fae7f4b9cb24e860203903ea74b377036c864d8",
+    "bytes": 455244,
+    "sha256": "c7f96f0a204fab83d81b267390284d9e707c2ffa6fc438318de1d08cd9c3b095",
     "animations": {
       "idle": "Idle_A",
       "walk": "Walking_A",
@@ -29,7 +29,9 @@
     "animationSources": [
       "Rig_Medium_General.glb",
       "Rig_Medium_MovementBasic.glb"
-    ]
+    ],
+    "appearance": "Capeless Barbarian with short belt and bear hat; no cape, cloak or long skirt geometry",
+    "visualCheck": "Blender CPU renders reviewed at 0%, 25%, 50%, 75% of Idle_A, Walking_A and Running_A, front and rear views. No obvious garment intersections observed in those samples; browser live view not verified here."
   },
   "environment": {
     "house": {
