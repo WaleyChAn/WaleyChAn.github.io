@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nexus · WebGL 2 能力测试</title>
+<style>body{margin:0;background:#101723;color:#e7edf5;font:16px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:24px}h1{font-size:24px;margin:0}p{color:#aebdd1}canvas{display:block;width:100%;height:420px;max-height:65vh;background:#182334;border:1px solid #41536d;border-radius:12px;outline-offset:4px}button{margin:12px 8px 0 0;padding:9px 18px;border:1px solid #7995b7;border-radius:8px;background:#22344c;color:white;cursor:pointer}dl{display:grid;grid-template-columns:160px 1fr;gap:4px 14px}dt{color:#aebdd1}dd{margin:0;overflow-wrap:anywhere}.fail{color:#ff9595}.ok{color:#8ae3b4}small{color:#aebdd1}</style></head>
+<body><main><h1>Nexus · WebGL 2 能力测试</h1><p>只测试绘制与输入，不含任何角色、动作或第三方素材。此页不是游戏验收结果。</p>
+<canvas id="view" tabindex="0" aria-label="WebGL 2 测试画布"></canvas>
+<div><button id="reset" type="button">重置位置</button><button id="pause" type="button">暂停旋转</button></div>
+<p>点击画布后，使用 W/A/S/D 或方向键移动彩色三角形。按钮与键盘结果会显示在下方。</p>
+<dl><dt>初始化</dt><dd id="status" role="status">等待初始化</dd><dt>版本</dt><dd id="version">—</dd><dt>渲染器</dt><dd id="renderer">—</dd><dt>已绘制帧数</dt><dd id="frames">0</dd><dt>像素回读</dt><dd id="pixels">尚未检查</dd><dt>输入计数</dt><dd id="inputs">0</dd><dt>最后输入</dt><dd id="last">无</dd><dt>位置</dt><dd id="position">0.00, 0.00</dd><dt>上下文</dt><dd id="context">待创建</dd><dt>GL 错误</dt><dd id="error">尚未检查</dd></dl>
+<small>探针版本 nexus-webgl-probe-20261027-v1。WebGL 初始化成功不等于复杂场景、真实 GPU 性能或操作手感通过。</small>
+</main><script type="module">
+const canvas=document.querySelector('#view');
+const out=id=>document.getElementById(id);
+let gl=null, program=null, vao=null, buffer=null, frameCount=0, inputCount=0, x=0, y=0, angle=0, paused=false, lost=false, previous=0;
+const pixel=new Uint8Array(4);
+const setStatus=(text,ok)=>{out('status').textContent=text;out('status').className=ok?'ok':'fail';};
+const record=label=>{inputCount++;out('inputs').textContent=String(inputCount);out('last').textContent=label;out('position').textContent=x.toFixed(2)+', '+y.toFixed(2);};
+function compile(type,source){const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(shader));return shader;}
+function init(){
+ gl=canvas.getContext('webgl2',{antialias:false,alpha:false});
+ if(!gl)throw new Error('当前浏览器无法创建 WebGL 2 上下文');
+ const vs=compile(gl.VERTEX_SHADER,`#version 300 es
+ in vec2 aPosition; in vec3 aColor; uniform float uAngle; uniform vec2 uOffset; uniform float uAspect; out vec3 vColor;
+ void main(){float c=cos(uAngle),s=sin(uAngle);vec2 p=mat2(c,-s,s,c)*aPosition; p.x/=uAspect;gl_Position=vec4(p+uOffset,0.,1.);vColor=aColor;}`);
+ const fs=compile(gl.FRAGMENT_SHADER,`#version 300 es
+ precision highp float;in vec3 vColor;out vec4 fragColor;void main(){fragColor=vec4(vColor,1.);}`);
+ program=gl.createProgram();gl.attachShader(program,vs);gl.attachShader(program,fs);gl.linkProgram(program);
+ if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error(gl.getProgramInfoLog(program));
+ gl.deleteShader(vs);gl.deleteShader(fs);
+ vao=gl.createVertexArray();gl.bindVertexArray(vao);buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
+ gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([0,.65,1,.22,.25,-.56,-.32,.2,1,.45,.56,-.32,.25,.55,1]),gl.STATIC_DRAW);
+ const pos=gl.getAttribLocation(program,'aPosition'),color=gl.getAttribLocation(program,'aColor');
+ gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,20,0);gl.enableVertexAttribArray(color);gl.vertexAttribPointer(color,3,gl.FLOAT,false,20,8);
+ out('version').textContent=String(gl.getParameter(gl.VERSION));out('renderer').textContent=String(gl.getParameter(gl.RENDERER));
+ out('context').textContent='可用';setStatus('PASS：WebGL 2 着色器与程序初始化成功',true);console.info('Nexus probe initialized');
+}
+function draw(now){
+ if(lost||!gl||!program)return;
+ const dt=previous?Math.min((now-previous)/1000,.05):0;previous=now;if(!paused)angle+=dt*.55;
+ const ratio=Math.min(window.devicePixelRatio||1,2),w=Math.max(1,Math.round(canvas.clientWidth*ratio)),h=Math.max(1,Math.round(canvas.clientHeight*ratio));
+ if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}gl.viewport(0,0,w,h);
+ gl.clearColor(.094,.137,.204,1);gl.clear(gl.COLOR_BUFFER_BIT);gl.useProgram(program);gl.bindVertexArray(vao);
+ gl.uniform1f(gl.getUniformLocation(program,'uAngle'),angle);gl.uniform2f(gl.getUniformLocation(program,'uOffset'),x,y);gl.uniform1f(gl.getUniformLocation(program,'uAspect'),w/h);gl.drawArrays(gl.TRIANGLES,0,3);
+ frameCount++;
+ if(frameCount===1||frameCount%30===0){
+  gl.readPixels(Math.floor((x*.5+.5)*w),Math.floor((y*.5+.5)*h),1,1,gl.RGBA,gl.UNSIGNED_BYTE,pixel);
+  out('pixels').textContent='RGBA '+Array.from(pixel).join(', ')+'（三角形中心）';
+  const err=gl.getError();out('error').textContent=err===gl.NO_ERROR?'NO_ERROR':String(err);out('frames').textContent=String(frameCount);
+ }
+ requestAnimationFrame(draw);
+}
+canvas.addEventListener('keydown',event=>{
+ const key=event.key.toLowerCase(),directions={w:[0,.08],arrowup:[0,.08],s:[0,-.08],arrowdown:[0,-.08],a:[-.08,0],arrowleft:[-.08,0],d:[.08,0],arrowright:[.08,0]};
+ if(!directions[key])return;event.preventDefault();x=Math.max(-.6,Math.min(.6,x+directions[key][0]));y=Math.max(-.5,Math.min(.5,y+directions[key][1]));record(event.key);
+});
+canvas.addEventListener('pointerdown',()=>canvas.focus());
+out('reset').addEventListener('click',()=>{x=0;y=0;record('重置位置');canvas.focus();});
+out('pause').addEventListener('click',()=>{paused=!paused;out('pause').textContent=paused?'继续旋转':'暂停旋转';record(paused?'暂停旋转':'继续旋转');});
+canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();lost=true;out('context').textContent='丢失，等待恢复';setStatus('上下文丢失：当前无法绘制',false);});
+canvas.addEventListener('webglcontextrestored',()=>{try{lost=false;previous=0;init();requestAnimationFrame(draw);}catch(error){setStatus(String(error),false);console.error(error);}});
+try{init();requestAnimationFrame(draw);}catch(error){setStatus(String(error),false);out('context').textContent='不可用';out('pixels').textContent='未绘制';console.error(error);}
+</script></body></html>
